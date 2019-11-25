@@ -1,0 +1,27 @@
+using System;
+
+namespace _0430Ary
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+		Console.Clear(); 
+		int n=100;
+		int m=200;
+		
+		Console.WriteLine("Os números impares entre 100  e 200 são:");
+		
+				for(int count=n;count<=m;count++ )
+				{	
+					if(count%2!=0)
+					{
+						Console.WriteLine(count);
+					}
+
+				}
+		
+		
+       }
+	}
+}

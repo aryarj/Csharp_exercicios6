@@ -1,0 +1,60 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		 	Console.Clear(); 
+			string alt="";
+		    			 
+			double total=0;
+			double chs=0;
+			double chn=0;
+								
+			double cms=0;
+			double cmn=0;
+					
+			do
+			{
+				Console.WriteLine("Iniciar pesquisa");
+				Console.WriteLine("se você é homem digite 'h' e se for mulher digite 'm'");
+				alt = Console.ReadLine();
+
+				if(alt=="h")
+				{Console.WriteLine("Por favor, digite: 's' para SIM, 'n' para NÃO");
+							alt = Console.ReadLine();
+							if(alt=="s"){chs++;}
+							else if(alt=="n"){chn++;}
+					
+				}
+
+				else if(alt=="m")
+				{Console.WriteLine("Por favor, digite: 's' para SIM, 'n' para NÃO");
+							alt = Console.ReadLine();
+							if(alt=="s"){cms++;}
+							else if(alt=="n"){cmn++;}
+				}	
+					
+				total=chs+chn+cms+cmn;	
+		
+			
+			}
+		while(total<10);
+			
+		Console.WriteLine("total= "+total);
+			double totals=chs+cms;
+		Console.WriteLine("totals= "+totals);
+			double totaln=chn+cmn;
+		Console.WriteLine("totaln= "+totaln);
+		Console.WriteLine("total m não= "+cmn);
+		Console.WriteLine("total m sim= "+cms);	
+		Console.WriteLine("total h não= "+chn);
+		Console.WriteLine("total h sim= "+chs);	
+
+		Console.WriteLine("phn= "+(chn*100/total)+"  %");
+			
+			
+			
+			
+	}
+}

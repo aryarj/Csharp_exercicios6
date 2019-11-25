@@ -1,0 +1,49 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+				
+				double opcao=0;
+				double nota1=0;
+				double nota2=0;
+				double media=0;
+		
+			while(opcao!=3)
+			{
+				Console.WriteLine("Porfavor, digite 1 para a média aritimética das duas notas");
+				Console.WriteLine("Porfavor, digite 2 para a média ponderada das duas notas");
+				Console.WriteLine("A primeira nota terá peso 2 e a segunda peso 3");
+				Console.WriteLine("Porfavor, digite 3 para sair do programa");
+				opcao = double.Parse(Console.ReadLine());
+								
+					if(opcao!=3)
+					{				
+							Console.WriteLine("Porfavor, digite a primeira nota");
+							nota1 = double.Parse(Console.ReadLine());
+							Console.WriteLine("Porfavor, digite a segunda nota");
+							nota2 = double.Parse(Console.ReadLine());
+								
+					
+																		
+								if(opcao==1)
+								{
+								Console.Clear();
+								media = (nota1+nota2)/2;
+								Console.WriteLine("A média aritmética foi de:  "+media);
+								}
+
+								if(opcao==2)
+								{
+								Console.Clear();
+								media = (2*nota1+3*nota2)/5;
+								Console.WriteLine("A média ponderada foi de:  "+media);
+								}
+				  }			
+			}
+			
+		
+				Console.WriteLine("Você digitou 3 e encerrou o programa");
+	}
+}

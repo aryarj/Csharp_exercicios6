@@ -1,0 +1,27 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		Console.Clear();
+		double idade=0;
+		double count=0;
+		double soma=0;
+		double media=0;
+
+		do
+		{
+			Console.WriteLine("Porfavor, digite a idade da pessoa número "+(count+1));
+			idade = double.Parse(Console.ReadLine());
+			soma=soma+idade;
+			count++;
+		}
+		while(idade!=0);
+		Console.WriteLine("A soma das idades foi de "+soma);
+		media=soma/(count-1);
+		Console.WriteLine("A média das idades foi de "+media);
+
+
+	}
+}

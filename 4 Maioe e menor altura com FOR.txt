@@ -1,0 +1,43 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		const int numeroQtd = 15;
+		double[] numeros = new double[numeroQtd];
+		double nmaior=0;
+		double nmenor=0;
+		
+			
+		for( int count = 0; count < numeroQtd; count++)
+		{
+			Console.WriteLine("Porfavor, digite a altura da pessoa número "+(count+1));
+			numeros[count] = double.Parse(Console.ReadLine());
+			Console.WriteLine("A altura da  "+(count+1)+"  foi "+numeros[count]+" metros  "); 	
+				
+			if(count==0)
+				{
+				nmenor = numeros[0];
+        		nmaior = numeros[0];
+				}
+			if(numeros[count] < nmenor )
+				{
+					nmenor = numeros[count];
+					
+				}
+			else if( numeros[count] > nmaior )
+				{
+					nmaior = numeros[count];
+					
+  				}
+
+		}	
+		
+		Console.WriteLine( "A menor altura foi: " + nmenor+"  metros");
+		
+		Console.WriteLine( "A maior altura foi: " + nmaior+"  metros");
+		
+
+	}
+}

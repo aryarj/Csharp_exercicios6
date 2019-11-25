@@ -1,0 +1,28 @@
+using System;
+
+namespace _0430Ary
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+		Console.Clear(); 
+		int n=0;
+		int count;
+		int f=1;
+		int m;
+		Console.WriteLine("Informe um número para gerar o seu fatorial");
+		n = Convert.ToInt32(Console.ReadLine());
+			m=n;
+				for(count=1;count<=n;count++ )
+				{	
+						f=f*count;
+
+				Console.WriteLine(count);
+				
+				}
+		
+		Console.WriteLine("O fatorial de:  "+m+"  é:  "+f);
+       }
+	}
+}
